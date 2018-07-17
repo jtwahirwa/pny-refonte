@@ -6,27 +6,28 @@
 .learn-m-button  {
 
 
-	color: white;
- 	font-size: 16px;
- 	padding: 10px 10px 10px 10px;
- 	font-family: "Roboto Condensed",Arial,sans-serif;
- 	background-color: #131d25;
-	margin-left:auto;
-	margin-top: auto;
+		font-family: "Roboto Condensed",Arial,sans-serif;
+	  display: inline-block;
+    font-size: 1.25em;
+    background-color: #131d25;
+    margin: 1em 0 !important;
+    padding: 10px 10px;
+    color: #fff !important;
+    transition: .2s ease-in;
+    position: relative;
+
+
 
 
 }
-
 
 @media screen and (max-width: 768px)
 
  {
 .learn-m-button{
-		width: 50%;
 		padding:2px 2px 2px 2px;
 		position: relative;
-		font-size: 14px;
-		height: auto;
+		font-size: 12px;
     margin-left: auto;
     margin-right: auto;
  }
@@ -38,7 +39,7 @@
 
  {
 .learn-m-button{
-		width: 50%;
+	font-size: 10px;
 		padding:2px 2px 2px 2px;
 		height: auto;
     margin-left: auto;
@@ -49,18 +50,32 @@
 
 
 
-
+/*
 @media screen and (max-width: 629px)
 
  {
-img.arrow-down{
-		width: 100%;
-		padding:2px 2px 2px 2px;
-		height: auto;
+.arrow-down{
+		width: 50%;
+		height: 2%;
     margin-left: auto;
     margin-right: auto;
  }
  }
+
+
+ @media screen and (max-width: 768px)
+
+ {
+.arrow-down{
+		width: 50%;
+		height: 3%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ }
+
+*/
+
 
 
 
@@ -70,11 +85,12 @@ img.arrow-down{
     .homepage-animate-bg  {
 		/*background-image: url("/data/slider-discover/banniere_home_small_1200x400_videocorpo.png"  );
     	background-size: cover;
-
+*/
     	height: 100%; width: auto; max-width: 100%;"*/
      	transform: scale(1.1); animation:zoomIn-bg 60s linear infinite alternate;
      	max-height: 100%;
       }
+
 
 
 
@@ -99,8 +115,9 @@ img.arrow-down{
     margin-right: auto;
     left: 80%;
     font-family: "Roboto Condensed",Arial,sans-serif;
-    font-size: 36px;
     color:#FFFFFF;}
+
+
 
 
 
@@ -111,28 +128,14 @@ img.arrow-down{
 		font-size: 16px;
 
 	}
-}
-
-
-
-
-.arrow-down{
-	max-width: 100%;
-	float: left;
-	margin-right: auto;
-	margin-left: auto;
-
-}
-
-
-
-
+}s
 
 
 </style>
 
 
 <?php
+
 
 
 $sliders = new pny_home_slider();
@@ -148,10 +151,10 @@ if(is_array($sliders)){
 
 
 ?>
-<div style="height:100%; overflow: hidden;" class="">
+<div style="height:100%; overflow: hidden;">
 <center >
 
-<div class="homepage-animate-bg "> <img  style= "width: 100%; height:100%;"class ="animate" alt="" src="/data/slider-discover/<?php echo $lastBanner->getLargeBanner() ;?>">
+<div class="homepage-animate-bg "> <img  style= "width: 100%;"class ="animate" alt="" src="/data/slider-discover/<?php echo $lastBanner->getLargeBanner() ;?>">
 </div>
 
 
@@ -184,11 +187,18 @@ if(is_array($sliders)){
 
 
 
-	<!--<a class="" href="#news"><img class ="arrow-down"alt="" src="/data/slider-discover/arrow-down.png"></a>-->
-
 </div>
 
+
+
+<!--<a href="#"><span class="fleche" ></span></a>-->
+<!--<a  class="" href="#news"><img class = "fleche" style="" alt="" src="/data/slider-discover/arrow-down.png"></a>-->
+
 		</center>
+
+
+
+
 
 	</div>
 
@@ -197,4 +207,7 @@ if(is_array($sliders)){
 
 }
 ?>
+
+
+
 
