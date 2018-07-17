@@ -1,28 +1,30 @@
+
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <style>
 
 a {
   color: #000;
+  font-family: 'Roboto', sans-serif;
+
+
 
 }
-</style>
 
 
 
-<style type="text/css">
-
-  .col-1{
-    display: inline-block;
+  .categs{
+    display:inline-block;
     text-align: center;
-    width: 153.8px;
-    height: 140.8px;
-    padding: 30px ;
+     padding: 40px 40px 40px 40px;
+     margin: auto;
     font-family: "Roboto",Arial,sans-serif;
     font-size: 12px;
-
-    max-width: 100%;
-
-
-
+    height: 160px;
 
   -webkit-transition: background-color 3s ease-out;
   -moz-transition: background-color 3s ease-out;
@@ -31,70 +33,59 @@ a {
 
 
   }
-.col-1:hover{
+
+
+
+.categs:hover{
 background-color:#079bd5;
 font-family: "Roboto",Arial,sans-serif;
 color: white;
-cursor: pointer;
-height: 140.8px ;
-max-width :  140.8px;
+max-width :auto;
 
 
 
-  color: hsl(400, 45% 75%, 45% );
+
+  color: hsl(324, 45% 70%, 45% 15%);
   animation: wheelHueColor 10s infinite;
-  background-color: #FF4500;
+  background-color: #A91101;
 
 }
 @supports (background-blend-mode: overlay) {
-  .col-1:hover {
-    background-image: linear-gradient(45deg,  blue 10%, black 99%);
+  .col-sm-1:hover {
+    background-image: linear-gradient(45deg,  #079bd5  99%, #16B84E , black);
+
     background-blend-mode: overlay;
-    height: 140.8px;
-    width: 140.8px;
-    float: none;
+    float: left;
 }
 }
 
 
-  .container{
-  text-align: center;
-  width: 100%;
-  height: 100%;
-
-  }
-
-
-
-
-  .news{
+  .col-sm-3{
     background-color: black;
     color:white;
     text-align:center ;
-    height: 140.8px;
+    height: 140px;
     padding: 40px 40px 40px 40px;
     font-family: "Roboto",Arial,sans-serif;
   }
 
-  span.nameUrl{
-    display: inline;
-    float: left;
+  .categ-img{
+    max-width: 100%;
+    min-height: auto;
+    width: 40px;
+
+
   }
 
 
 
-
-
-
-
-
 </style>
+</head>
 
-<div class="scroll">
-<a href="/blog"><div class="news x-sm-24 sm-18 med-8 lg-6 column flex-align">
+<a href="/blog"><div class="col-sm-3 flex-align">
 <h3>NEWS</h3>
 </div></a>
-</div>
+
 
 
                       <?php foreach($solutionsConsumers AS $uneSolution) {
@@ -118,11 +109,11 @@ max-width :  140.8px;
 
 
 <a href="/<?php echo $language ;?>/consumer/explore-all-products/<?php echo $uneSubsolution->getIdSubsolution().'-'.$nameUrl ;?>">
-  <div style = "display: inline-block; font-size:12px; margin-left: 0px;" class="rows">
-<div class="col-1"> <img alt="<?php echo $uneSubsolution->getNameSubsolution($language, DEFAULT_LANGUAGE) ;?>" class="" src="<?php echo $imageSubSolution ;?>" height="42" width="42" >
-<div class="product-nav-title"><span class ="nameUrl"><?php echo $uneSubsolution->getNameSubsolution($language, DEFAULT_LANGUAGE) ;?></span></div>
+
+<div style="max-width: 11.11%;max-height:140px;" class="col-sm-1 categs"> <img  alt="<?php echo $uneSubsolution->getNameSubsolution($language, DEFAULT_LANGUAGE) ;?>" class="categ-img" src="<?php echo $imageSubSolution ;?> ">
+<div style="font-family: 'Roboto', sans-serif;"><span class ="nameUrl"><?php echo $uneSubsolution->getNameSubsolution($language, DEFAULT_LANGUAGE) ;?></span></div>
 </div>
-</div>
+
 </a>
 
 
