@@ -83,10 +83,10 @@
 			/*quand on aura un bg a part */
 
     .homepage-animate-bg  {
-		/*background-image: url("/data/slider-discover/banniere_home_small_1200x400_videocorpo.png"  );
+		background-image: url("/data/slider-discover/banniere_home_small_1200x400_videocorpo.png"  );
     	background-size: cover;
-*/
-    	height: 100%; width: auto; max-width: 100%;"*/
+
+    	height: 0%; width: auto; max-width: 100%;
      	transform: scale(1.1); animation:zoomIn-bg 60s linear infinite alternate;
      	max-height: 100%;
       }
@@ -128,7 +128,7 @@
 		font-size: 16px;
 
 	}
-}s
+}
 
 
 </style>
@@ -151,10 +151,13 @@ if(is_array($sliders)){
 
 
 ?>
-<div style="height:100%; overflow: hidden;">
+
+	<div style = "height: auto;max-width: 100%; overflow: hidden;">
 <center >
 
 <div class="homepage-animate-bg "> <img  style= "width: 100%;"class ="animate" alt="" src="/data/slider-discover/<?php echo $lastBanner->getLargeBanner() ;?>">
+</div>
+</center>
 </div>
 
 
@@ -194,7 +197,7 @@ if(is_array($sliders)){
 <!--<a href="#"><span class="fleche" ></span></a>-->
 <!--<a  class="" href="#news"><img class = "fleche" style="" alt="" src="/data/slider-discover/arrow-down.png"></a>-->
 
-		</center>
+
 
 
 
