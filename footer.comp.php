@@ -1,83 +1,29 @@
+<link rel="stylesheet" type="text/css" href="/design/css/footer.css">
+<style type="text/css">
 
 
-<style>
-
-
-.social-header{
-  font-size: 12px;
-  }
-  .pnycompany {
-    background-color: black;
-    color: white;
-}
-
-
-
-  .procompany {
-    background-color: black;
-    color: white;
-
-}
-  .social-foot-section {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 12px;
-    height: auto;
-    padding: 20px 0 !important;
-}
 
 .row {
-    zoom: 1;
-    width: 100%;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
     max-width: 80em;
     position: relative;
-}
-    .pny-icon{
-
-      width: 30px;
-      display: inline-block;
-
-    }
- .pnypro-icon{
-
-      width: 30px;
-      display: inline-block;
-
-    }
-.row-footer{
-  background-color:#9f9f9f ;
-  color: white;
-}
-
-.main-footer {
-    margin-top: 0 !important;
-}
-
-.main-footer {
-    background-color: #222!important;
-}
-
-
-.lower-footer li {
     font-size: 12px;
-    color: #aaa;
-}
-
-.main-footer ul {
-    list-style-type: none;
 
 }
+
 
 </style>
 
+<div class="footer-top-bar"></div>
 
 
-<footer class="main-footer" role="contentinfo">
-    <div class="footer-top-bar"></div>
-    <div class="footer-banner">
+                 <div style="  background: #454545;" class="footer-padd">
+ <div class="footer-banner">
+
         <div class="social-foot-section row">
 <div class="lg-8 column no-padd pnycompany">
 <h5 class="social-header">PNY Europe</h5>
@@ -100,17 +46,12 @@
 </div>
 </div>
     </div>
-    <div class="row">
-        <div class="lg-24 main-content">
-            <div class="row">
 
-                <div class="column no-padd med-14 push-right-med">
-                    <div class="row">
 
-                    </div>
 
-                </div>
-                <div class="lower-footer column no-padd sm-24">
+
+<div class="lower-footer row">
+
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <div class="row">
 <div class="x-sm-12 sm-6 med-4 lg-4 column"> <nav> <a class="header" href="/support/technical-support"><em aria-hidden="true" class="fa fa-wrench"></em> Technical Support</a> </nav>
@@ -162,9 +103,7 @@
 <div class="x-sm-8 sm-4 med-4 lg-3 column push-right-lg text-right"><img alt="Keeping and Creating Jobs in the USA" class="footer-icon" src="/File%20Library/Logos/keeping-and-creating-jobs-in-the-usa.svg"></div>
 <div class="x-sm-8 sm-4 med-4 lg-3 column push-right-lg text-right"><img alt="Powered by iApps" class="footer-icon" src="/File%20Library/Logos/powered-by-iapps.svg"></div>
 -->
-</div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</footer>
+            </div>     </div>   </footer>
+
