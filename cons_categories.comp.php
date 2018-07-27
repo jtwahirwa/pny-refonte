@@ -1,116 +1,12 @@
 
 <head>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<style>
-
-a {
-  color: #000;
-  font-family: 'Roboto', sans-serif;
-
-
-
-}
-
-
-@media only screen and (max-width: 1024px) {
-  .categs{
-    min-width: 50%;
-    height: auto;
-
-
-  }
-}
-@media only screen and (max-width: 640px) {
-  .categs{
-    max-width: 100%;
-    height: 100%;
-
-}
-
-
-
-
-  }
-
-
-
-
-
-
-  .categs{
-    display:inline-block;
-    text-align: center;
-     padding-top:  40px;
-    font-family: "Roboto",Arial,sans-serif;
-    height: 160px;
-    max-width: 32%;
-  font-size: 12px;
-  font-size: 1.2rem;
-  margin-bottom: auto;
-
-  -webkit-transition: background-color 3s ease-out;
-  -moz-transition: background-color 3s ease-out;
-  -o-transition: background-color 3s ease-out;
-  transition: background-color 3s ease-out;
-
-
-  }
-
-
-
-.categs:hover{
-background-color:#079bd5;
-font-family: "Roboto",Arial,sans-serif;
-color: white;
-max-width :auto;
-
-
-
-
-  color: hsl(324, 45% 70%, 45% 15%);
-  animation: wheelHueColor 10s infinite;
-  background-color: #A91101;
-
-}
-@supports (background-blend-mode: overlay) {
-  .col-sm-1:hover {
-    background-image: linear-gradient(45deg,  #079bd5  99%, #16B84E , black);
-
-    background-blend-mode: overlay;
-
-}
-}
-
-
-  .col-sm-3{
-    background-color: black;
-    color:white;
-    text-align:center ;
-    height: 140px;
-    padding: 40px 40px 40px 40px;
-    font-family: "Roboto",Arial,sans-serif;
-
-  }
-
-  .categ-img{
-    max-width: 100%;
-    height: auto;
-    width: 40px;
-    max-width: 100%;
-
-
-
-
-  }
-
-
-
-
-</style>
+ <link rel="stylesheet" type="text/css" href="/design/css/homepage.css">
 </head>
 
 <a href="/blog"><div class="col-sm-3 flex-align">
@@ -137,7 +33,7 @@ max-width :auto;
                                   ?>
 
 
-
+<!--
 
 <a href="/<?php echo $language ;?>/consumer/explore-all-products/<?php echo $uneSubsolution->getIdSubsolution().'-'.$nameUrl ;?>">
 
@@ -147,6 +43,7 @@ max-width :auto;
 
 </a>
 
+-->
 
 <?php }
  }
@@ -158,10 +55,81 @@ max-width :auto;
  <?php
 
  }?>
+
+
+<a href="/<?php echo $language ;?>/consumer/explore-all-products/13-graphics-cards">
+
+<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_graphics-card.svg ">
+<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">Graphics cards</span></div>
+</div>
+
+</a>
+<a href="/<?php echo $language ;?>/consumer/explore-all-products/14-solid-state-drives">
+
+<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_MicroSD_flash-cards.ai.png ">
+<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">SSD</span></div>
+</div>
+
+</a>
+<a href="/<?php echo $language ;?>/consumer/explore-all-products/15-memory">
+
+<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_flash-cards_.png ">
+<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">PC Memory</span></div>
+</div>
+
+</a>
+<a href="/<?php echo $language ;?>/consumer/explore-all-products/1-usb-flash-drives">
+
+<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_flash-cards_.png ">
+<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">USB</span></div>
+</div>
+
+</a>
+<a href="/<?php echo $language ;?>/consumer/explore-all-products/6-flash-memory">
+
+<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_flash-cards_.png ">
+<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">Memory cards</span></div>
+</div>
+
+</a>
+<a href="/<?php echo $language ;?>/consumer/explore-all-products">
+
+<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_power_.png ">
+<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">Power Solutions</span></div>
+</div>
+
+</a>
+<a href="/<?php echo $language ;?>/consumer/explore-all-products">
+
+<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_flash-cards_.png ">
+<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">Accessories</span></div>
+</div>
+
+</a>
+<a href="/<?php echo $language ;?>/consumer/explore-all-products/<?php echo $uneSubsolution->getIdSubsolution().'-'.$nameUrl ;?>">
+
+<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/XLR8.svg ">
+<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">XLR8 Gaming</span></div>
+</div>
+
+</a>
+<a href="/<?php echo $language ;?>/consumer/explore-all-products/2-microsd-cards">
+
+<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_flash-cards_.png ">
+<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">Mobile Memory </span></div>
+</div>
+
+</a>
+
+
+
+
+
 <!--[CDATA[
  <a class="news" href="/blog"><div class="col-1" style = "background-color:black; width: 20%; color:white; float: left"><h3>NEWS</h3></div></a>
 
 -->
+<div class="clear-both"></div>
 
 
 
