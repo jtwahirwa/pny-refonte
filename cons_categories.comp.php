@@ -1,15 +1,50 @@
 
+
+
+
+
 <head>
 
 
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
  <link rel="stylesheet" type="text/css" href="/design/css/homepage.css">
+
+ <style type="text/css">
+
+
+
+.product-nav-icon{
+  width: 60px;
+  height: 60px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 18px;
+
+
+
+}
+
+.flex-align {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+.flex-center {
+    max-width: 100%;
+    height: auto;
+
+}
+
+ </style>
+
 </head>
 
-<a href="/blog"><div class="col-sm-3 flex-align">
+<a href="/blog"><div id= "news" class="news x-sm-24 sm-18 med-8 lg-6 column flex-align ">
 <h3>NEWS</h3>
 </div></a>
 
@@ -37,7 +72,7 @@
 
 <a href="/<?php echo $language ;?>/consumer/explore-all-products/<?php echo $uneSubsolution->getIdSubsolution().'-'.$nameUrl ;?>">
 
-<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="<?php echo $uneSubsolution->getNameSubsolution($language, DEFAULT_LANGUAGE) ;?>" class="categ-img" src="<?php echo $imageSubSolution ;?> ">
+<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="<?php echo $uneSubsolution->getNameSubsolution($language, DEFAULT_LANGUAGE) ;?>" class="product-nav-icon" src="<?php echo $imageSubSolution ;?> ">
 <div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl"><?php echo $uneSubsolution->getNameSubsolution($language, DEFAULT_LANGUAGE) ;?></span></div>
 </div>
 
@@ -50,74 +85,65 @@
  ?>
 
 
+
 <!-- </div>-->
 
  <?php
 
  }?>
-
-
 <a href="/<?php echo $language ;?>/consumer/explore-all-products/13-graphics-cards">
-
-<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_graphics-card.svg ">
-<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">Graphics cards</span></div>
-</div>
-
+<div class=" x-sm-8 sm-6 med-4 lg-2 column  flex-align categs graphics_card"> <div class="flex-center"> <img alt="" class="product-nav-icon" src="/data/pictos/icon_graphics-card.svg ">
+<div class ="nameUrl"><?php echo toolsPny::getStaticRessource('graphic_cards', $language, $tabLabelsFront) ; ?></div>
+</div></div></div>
 </a>
+
+
 <a href="/<?php echo $language ;?>/consumer/explore-all-products/14-solid-state-drives">
-
-<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_MicroSD_flash-cards.ai.png ">
-<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">SSD</span></div>
-</div>
-
+<div class=" x-sm-8 sm-6 med-4 lg-2 column  flex-align categs ssd"> <div class="flex-center"> <img alt="" class="product-nav-icon" src="/data/pictos/icon_ssd.svg ">
+<div  class ="nameUrl">SSD</div>
+</div></div></div>
 </a>
+
 <a href="/<?php echo $language ;?>/consumer/explore-all-products/15-memory">
-
-<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_flash-cards_.png ">
-<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">PC Memory</span></div>
-</div>
-
+<div class=" x-sm-8 sm-6 med-4 lg-2 column flex-align categs pc_memory"><div class="flex-center"> <img alt="" class="product-nav-icon"  src="/data/pictos/icon_ram.svg ">
+<div class ="nameUrl"><?php echo toolsPny::getStaticRessource('pc_memory', $language, $tabLabelsFront) ; ?></div>
+</div></div>
 </a>
+
 <a href="/<?php echo $language ;?>/consumer/explore-all-products/1-usb-flash-drives">
-
-<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_flash-cards_.png ">
-<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">USB</span></div>
-</div>
-
+<div  class=" x-sm-8 sm-6 med-4 lg-2 column flex-align categs usb"> <div class="flex-center"> <img alt="" class="product-nav-icon"  src="/data/pictos/icon_usb.svg ">
+<div class ="nameUrl">USB</div>
+</div></div>
 </a>
+
 <a href="/<?php echo $language ;?>/consumer/explore-all-products/6-flash-memory">
-
-<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_flash-cards_.png ">
-<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">Memory cards</span></div>
+<div  class=" x-sm-8 sm-6 med-4 lg-2 column flex-align categs memory_card"> <img class="product-nav-icon" src="/data/pictos/icon_flash-cards_.png ">
+<div class ="nameUrl"><?php echo toolsPny::getStaticRessource('memory_card', $language, $tabLabelsFront) ; ?></div>
 </div>
-
 </a>
+
 <a href="/<?php echo $language ;?>/consumer/explore-all-products">
-
-<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_power_.png ">
-<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">Power Solutions</span></div>
-</div>
-
+<div class=" x-sm-8 sm-6 med-4 lg-2 column flex-align categs power_solution"> <div class="flex-center"> <img alt="" class="product-nav-icon"  src="/data/pictos/icon_power_.png ">
+<div class ="nameUrl"><?php echo toolsPny::getStaticRessource('power_solutions', $language, $tabLabelsFront) ; ?></div>
+</div></div>
 </a>
+
 <a href="/<?php echo $language ;?>/consumer/explore-all-products">
-
-<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_flash-cards_.png ">
-<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">Accessories</span></div>
-</div>
-
+<div  class=" x-sm-8 sm-6 med-4 lg-2 column flex-align categs accessories"> <div class="flex-center"> <img alt="" class="product-nav-icon"  src="/data/pictos/icon_accessories.svg ">
+<div  class ="nameUrl"><?php echo toolsPny::getStaticRessource('accessories', $language, $tabLabelsFront) ; ?></div>
+</div></div>
 </a>
+
 <a href="/<?php echo $language ;?>/consumer/explore-all-products/<?php echo $uneSubsolution->getIdSubsolution().'-'.$nameUrl ;?>">
-
-<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/XLR8.svg ">
-<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">XLR8 Gaming</span></div>
-</div>
-
+<div  class=" x-sm-8 sm-6 med-4 lg-2 column flex-align categs xlr8"> <div class="flex-center"> <img alt="" class="product-nav-icon"  src="/data/pictos/XLR8.svg ">
+<div  class ="nameUrl"><?php echo toolsPny::getStaticRessource('xlr8', $language, $tabLabelsFront) ; ?></div>
+</div></div>
 </a>
-<a href="/<?php echo $language ;?>/consumer/explore-all-products/2-microsd-cards">
 
-<div style="min-width:auto; max-height:140px;" class="col-sm-1 categs"> <img  alt="  " class="categ-img" src="/data/pictos/icon_flash-cards_.png ">
-<div style="font-family: 'Roboto', sans-serif; "><span  class ="nameUrl">Mobile Memory </span></div>
-</div>
+<a href="/<?php echo $language ;?>/consumer/explore-all-products/2-microsd-cards">
+<div class=" x-sm-8 sm-6 med-4 lg-2 column flex-align categs mobile_memory"> <div class="flex-center"> <img alt="" class="product-nav-icon"  src="/data/pictos/icon_MicroSD_flash-cards.ai.png ">
+<div class ="nameUrl"><?php echo toolsPny::getStaticRessource('mobile_memory', $language, $tabLabelsFront) ; ?></div>
+</div></div>
 
 </a>
 
@@ -129,7 +155,7 @@
  <a class="news" href="/blog"><div class="col-1" style = "background-color:black; width: 20%; color:white; float: left"><h3>NEWS</h3></div></a>
 
 -->
-<div class="clear-both"></div>
+
 
 
 
