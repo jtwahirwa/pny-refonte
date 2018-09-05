@@ -1,7 +1,4 @@
 
-<link rel="stylesheet" type="text/css" href="/design/css/homepage.css">
-
-
 <?php
 
 
@@ -21,28 +18,6 @@ if(is_array($sliders)){
 ?>
 
 <style type="text/css">
-
-
-
-
-.arrow{
-
-		position: absolute;
-    margin-left: 50%;
-    margin-top: -8%;
-    margin-right: auto;
-    opacity: 1;
-    max-width: 100%;
-    height: auto;
-
-}
-
-
-
-.arrow:hover{
-	opacity: 1;
-}
-
 
 
 </style>
@@ -68,7 +43,7 @@ if(is_array($sliders)){
 
 
 			<div>
-			  <h2 style="font-family: Roboto Arial,sans-serif";><?php echo $lastBanner->getTitle($language, DEFAULT_LANGUAGE) ; ?></h2><p class = "text" style="min-height:2%;"><?php echo $lastBanner->getText($language, DEFAULT_LANGUAGE) ; ?></p>
+			  <h2 style="font-family: Roboto Arial,sans-serif; color: <?php echo $lastBanner->getBannerColor();?>";><?php echo $lastBanner->getTitle($language, DEFAULT_LANGUAGE) ; ?></h2><p class = "text" style="min-height:2%;"><?php echo $lastBanner->getText($language, DEFAULT_LANGUAGE) ; ?></p>
 
 			</div>
 
